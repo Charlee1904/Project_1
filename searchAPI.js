@@ -1,9 +1,12 @@
 const key ='AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
-const imageURL='https://api.nasa.gov/planetary/apod?api_key='+key
+const imageURL='https://api.nasa.gov/planetary/apod?api_key='+ key
 fetch(imageURL)
     .then(function(responce){
         responce.json()
         .then(function(data){
             console.log(data)
+            document.getElementById("potdImg").src=data.url
         })
     })
+
+    
