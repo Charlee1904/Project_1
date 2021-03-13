@@ -1,0 +1,28 @@
+* {
+    margin:0%;
+}
+
+
+
+#topBanner {
+    background-color: blueviolet;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: xxx-large;
+    margin: -7px;
+}
+
+#searchPic {
+    background-color: chartreuse;
+}
+
+#dailyPic {
+    background-color: yellow;
+}
+
+#oldSearch {
+    background-color:brown
+}
+
