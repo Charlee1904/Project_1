@@ -5,15 +5,22 @@
 
 
 #topBanner {
-    background-color: blueviolet;
+    background-image: url(mars.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     display: flex;
-    text-align: center;
     justify-content: center;
-    font-weight: bolder;
-    font-size: xxx-large;
-    margin: -7px;
+    width: 100%;
+    height: 130px;
+    flex-direction: column-reverse;
+    font-family: 'DotGothic16', sans-serif;
 }
 
+
+.topRow {
+    background-color: lightslategray;
+}
 #searchPic {
     background-color: chartreuse;
 }
@@ -23,6 +30,18 @@
 }
 
 #oldSearch {
-    background-color:brown
+    background-color:brown;
+    height: 450px;
+    width: 30%;
+
 }
 
+#searchVid {
+    background:greenyellow;
+}
+
+#potdImg {
+    background-color: pink;
+    background-color: pink;
+    height: 425px;
+}
