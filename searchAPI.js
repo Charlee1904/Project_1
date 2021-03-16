@@ -13,8 +13,8 @@ fetch(imageURL)
             if(data.media_type=== "video"){
                myVideo.src= data.url
             }
-
-            document.getElementById("potdImg").src=data[0].url
+            else if(data.media_type==="image"){
+            document.getElementById("potdImg").src=data.url}
         })
     })
 
