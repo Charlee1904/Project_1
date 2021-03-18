@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <title>Document</title>
+   <title>Amazing Space</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
-
-<body>
+<body onload="homePage()">
     <h1 id="topBanner">NASA Image Searcher</h1>
     <div class="topRow">
         <div id="searchPic">Searchbox
@@ -54,7 +56,12 @@
 
         </div>
 
-    </div>
+        <img id="potdImg" src="">
+        <!-- <video muted controls id="potdVid" width="500px" height="200px" autoplay>
+        <source id="videoSource" src='https://www.youtube.com/embed/WJua8eXLX9o?rel=0' type="video/mp4"> </video> -->
+        <iframe class="vid" id="potdVid" width="420" height="315" src="">
+</iframe>
+  </div>
 
     <script src="searchAPI.js"></script>
     <script src="script.js"></script>
