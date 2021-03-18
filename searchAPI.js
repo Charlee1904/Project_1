@@ -12,10 +12,10 @@ const nextPage = document.querySelector("#pageIncrease")
 nextPage.addEventListener("click", pageNext)
 const backPage =document.querySelector("#pageDecrease")
 backPage.addEventListener("click", returnPage)
-let nArray= false
 let rImg0=0
 let rImg1=1
 let rImg2=2
+let roverNumber = 0
 
 
 
@@ -45,25 +45,19 @@ let rImg2=2
 
 
 function chaneRovers(){
-    let currentNumber=""
+   
     page =1
-    let number =Math.round((Math.random()*3)+1);
-    // console.log("Cu"+currentNumber)
-    // console.log(number)
-    if (number>2){
-        number = 0
+    
+    roverNumber ++
+    console.log(roverNumber)
+    if (roverNumber===3){
+        roverNumber = 0
+        rover = roverArray[roverNumber]
+    document.getElementById("rover").textContent=rover
+    marsInfo()
+    return
     }
-    if (currentNumber===number){
-        // console.log('same')
-        chaneRovers()
-        return
-    }
-    else if(currentNumber!=number){
-        // console.log('not same')
-        
-        currentNumber=number
-    }
-    rover = roverArray[number]
+    rover = roverArray[roverNumber]
     document.getElementById("rover").textContent=rover
     marsInfo()
 }
