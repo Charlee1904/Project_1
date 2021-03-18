@@ -1,8 +1,5 @@
 const key ='AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
 const test='https://mooncalc.org/#/lat,lon,zoom/date/time/objectlevel/maptype'
-const imageURL='https://api.nasa.gov/planetary/apod?&api_key='+ key
-const playVidButton= document.querySelector("#potdVid");
-const myVideo=document.getElementById("potdVid")
 const marsWeather="https://api.maas2.apollorion.com"
 const roverArray = ["Curiosity","Opportunity","Spirit"]
 let rover= roverArray[0]
@@ -12,21 +9,12 @@ const nextPage = document.querySelector("#pageIncrease")
 nextPage.addEventListener("click", pageNext)
 const backPage =document.querySelector("#pageDecrease")
 backPage.addEventListener("click", returnPage)
+// const changeBtn=document.querySelector('#changeRover')
+// changeBtn.addEventListener("click", changeRovers())
 
-
-function homePage(){
-fetch(imageURL)
-    .then(function(responce){
-        responce.json()
-        .then(function(data){
-            console.log(data)
-            if(data.media_type=== "video"){
-               myVideo.src= data.url
-            }
-            else if(data.media_type==="image"){
-            document.getElementById("potdImg").src=data.url}
-        })
-    })}
+function marsPageFun(){
+    window.location.href=".marsPage.html"
+}
 
  function pageNext(){
      page +=1
@@ -40,11 +28,6 @@ fetch(imageURL)
      marsInfo()
  }
 
-
-
-
-// const changeBtn=document.querySelector('#changeRover')
-// changeBtn.addEventListener("click", changeRovers())
 
 function chaneRovers(){
     let currentNumber=""
@@ -70,21 +53,6 @@ function chaneRovers(){
     marsInfo()
 }
 
-function homePage(){
-    fetch(imageURL)
-    .then(function(responceImage){
-        responceImage.json()
-        .then(function(dataImage){
-            console.log(dataImage)
-            if(dataImage.media_type=== "video"){
-                myVideo.style.display="block";
-                myVideo.src= dataImage.url;
-                
-            }
-            else if(dataImage.media_type==="image"){
-                document.getElementById("potdImg").src=dataImage.url}
-            })
-        })}
  function marsInfo(){
     if (rover===roverArray[1]&&rover===roverArray[1]){
         console.log("aaa")
