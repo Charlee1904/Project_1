@@ -100,3 +100,17 @@ margin-left: auto;
     width: 500px;
     border: 5px solid black;
 }
+
+.pageIncrease{
+    font-size: 20px;
+    position: relative;
+    left: 38%;
+    top:60px;
+}
+.pageDecrease{
+    font-size: 20px;
+    position: relative;
+    left: 35%;
+    top:60px;
+   
+}
