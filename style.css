@@ -10,7 +10,7 @@ body {
     font-family: fantasy;
     font-variant-caps: unicase;
     color: white;
-    background-repeat: unset;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -19,8 +19,7 @@ body {
 }
 
 #dailyPic {
-    background-color: yellow;
-    height: 422px;
+    height: 425px;
 }
 
 #potdImg {
