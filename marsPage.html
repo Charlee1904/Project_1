@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleMars.css">
+</head>
+<body onload=marsInfo()>
+<div class="header" id="header">
+    <h1 class="headOne" id="headOne">Cool Mars Info!</h1>
+
+
+</div>
+<div class="topBar"><br></div>
+
+    <div class="roverWeather" id="roverWeather">
+    <p class="weatherHead" id="weatherHead">Current Mars Weather </p>    
+    <p class="maxTemp" id="maxTemp">Max Temperature</p>
+    <p class="minTemp" id="minTemp">Min Temperature</p>
+    <p class="sunRise" id='sunRise'>Sunrise:</p>
+    <p class='sunSet' id='sunSet'>Sunset:</p>
+    </div>
+<div class="rover" id="rover">Curiosity</div>
+<button class="changeRover" id="changeRover" onclick='chaneRovers()'>Change Rovers!</button>
+    <div class="roverImgs" id="roverImgs">
+        <img class="img0" id="img0" src="">
+        <img class="img1" id="img1" src="">
+        <img class="img2" id="img2" src="">
+
+
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="searchAPI.js"></script>
+</body>
+</html>
