@@ -1,12 +1,12 @@
 let date = document.getElementById("picDateChosen");
-const key = 'AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
+const apiKey = 'AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
 let imageDate = 'date=' + "2021-02-01" + '&';
-let imageURL = 'https://api.nasa.gov/planetary/apod?&api_key=' + key ;
+let imgUrl = 'https://api.nasa.gov/planetary/apod?&api_key=' + apiKey ;
 
 let xmlHttp = new XMLHttpRequest();
 
 
-// fetch(imageURL)
+// fetch(imgUrl)
 //     .then(function(responce){
 //         responce.json()
 //         .then(function(data){
@@ -34,5 +34,5 @@ xmlHttp.onreadystatechange = function () {
         // datePicked.addEventListener("dateChange",(e))
     }
 }
-xmlHttp.open("GET", imageURL, true);
+xmlHttp.open("GET", imgUrl, true);
 xmlHttp.send();
