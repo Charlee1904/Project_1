@@ -19,8 +19,6 @@ fetch(imageURL)
         })
     })
 
- 
-=======
 const marsWeather="https://api.maas2.apollorion.com"
 const roverArray = ["Curiosity","Opportunity","Spirit"]
 let rover= roverArray[0]
