@@ -62,3 +62,41 @@
     right:-400px;
     bottom: 60px;
 }
+.rover{
+    position: relative;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    top: 20px;
+    margin: 0px;
+}
+.changeRover{
+position: relative;
+
+left:48%;
+top: 20px;
+font-size: 20px;
+}
+.roverImgs{
+position: relative;
+top: 150px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.img0{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    
+}
+.img1{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+}
+.img2{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+}
