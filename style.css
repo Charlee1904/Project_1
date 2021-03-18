@@ -1,3 +1,4 @@
+
 * {
     margin:0%;
 }
@@ -53,6 +54,25 @@ body {
     height: 65px;
     flex-direction: column-reverse;
     font-family: 'DotGothic16', sans-serif;
+<<<<<<< HEAD
+=======
+}
+
+.topRow {
+    display: grid;
+    grid-template-rows: 200px 50% 154px;
+    grid-template-columns: 35% 65%;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+@media (max-width:400px){};
+@media (min-width:400px) and (max-width:1000px){};
+@media (min-width:1001px){};
+.vid{
+    display: none;
+>>>>>>> 7fbf730f9275aea3dc5245222e050a9cfd870af1
 }
 
 .topRow {
