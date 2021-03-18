@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,50 +11,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
-<body>
-    
+<body onload="homePage()">
     <h1 id="topBanner">NASA Image Searcher</h1>
-<div class="topRow">
-    <div id="searchPic">Searchbox
-        <input type="date" id="picDateChosen">
+    <div class="topRow">
+        <div id="searchPic">Searchbox
+            <input type="date" id="from-datepicker" >
+            <!--i want date picker in yyyy-mm-dd fromate-->
+            <button id="saveImage"></button>
+        </div>
+        <div class="container">
+            <div id="titlePic">Picture Name</Picture>
+            </div>
+            <div id="dailyPic">
+                <img id="potdImg" src="">
+               
+            </div>
+            <div id="copyrightPic">Copyrights</div>
+            <div id="explanationPic">Explanation</div>
+        </div>
+        <div id="oldSearch">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+
+        </div>
 
     </div>
-    <div id="dailyPic">
-        <a href="https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia24482-4-1041.jpg?itok=rIASVfr6">test pic</a>
-    </div>
 
-    <div id="oldSearch">
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-            <li>5</li>
-        </ul>
+    <div id="bottomRow">
+        <div id="searchVid">Search Video
+            <input type="date" id="vidDateChosen">
+        </div>
+        <div id="dailyVid">
 
-    </div>
 
-</div>
+            <!-- <video muted controls id="potdVid" width="500px" height="200px" autoplay>
+        <source id="videoSource" src='https://www.youtube.com/embed/WJua8eXLX9o?rel=0' type="video/mp4"> </video> -->
+            <iframe id="potdVid" width="420" height="315" src="">
+            </iframe>
 
-<div id="bottomRow">
-    <div id="searchVid">Search Video
-        <input type="date" id="vidDateChosen">
-    </div>
-    <div id="dailyVid">
+        </div>
 
         <img id="potdImg" src="">
         <!-- <video muted controls id="potdVid" width="500px" height="200px" autoplay>
         <source id="videoSource" src='https://www.youtube.com/embed/WJua8eXLX9o?rel=0' type="video/mp4"> </video> -->
         <iframe class="vid" id="potdVid" width="420" height="315" src="">
 </iframe>
+  </div>
 
-    </div>
+    <script src="searchAPI.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-</div>
-
-<script src="searchAPI.js"></script>
-
-    
 
 </body>
+
 </html>
