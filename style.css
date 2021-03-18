@@ -2,46 +2,68 @@
     margin:0%;
 }
 
-
-
-#topBanner {
-    background-image: url(mars.PNG);
-    background-repeat: no-repeat;
+body {
+    background-image: url(background.jpg);
+    background-color: black;
+    background-size: cover;
+    font-family: fantasy;
+    font-variant-caps: unicase;
+    color: white;
+    background-repeat: unset;
     background-position: center;
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 130px;
-    flex-direction: column-reverse;
-    font-family: 'DotGothic16', sans-serif;
 }
 
-
-.topRow {
-    background-color: lightslategray;
-}
-#searchPic {
-    background-color: chartreuse;
+#bottom {
+    display:grid;
 }
 
 #dailyPic {
     background-color: yellow;
-}
-
-#oldSearch {
-    background-color:brown;
-    height: 450px;
-    width: 30%;
-
-}
-
-#searchVid {
-    background:greenyellow;
+    height: 422px;
 }
 
 #potdImg {
     background-color: pink;
     background-color: pink;
-    height: 425px;
+    height: 285px;
+    border: 5px solid rebeccapurple;
 }
+
+#potdVid {
+    display:none;
+}
+
+#oldSearch {
+    background-color:brown;
+}
+
+#searchPic {
+    background-color: chartreuse;
+}
+
+
+#searchVid {
+    background:greenyellow;
+    width: 143px;
+}
+
+#topBanner {
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    flex-direction: column-reverse;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.topRow {
+    display: grid;
+    grid-template-rows: 200px 50% 154px;
+    grid-template-columns: 35% 65%;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+@media (max-width:400px){};
+@media (min-width:400px) and (max-width:1000px){};
+@media (min-width:1001px){};
