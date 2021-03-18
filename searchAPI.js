@@ -42,6 +42,10 @@ fetch(imageURL)
 
 
 
+
+// const changeBtn=document.querySelector('#changeRover')
+// changeBtn.addEventListener("click", changeRovers())
+
 function chaneRovers(){
     let currentNumber=""
     page =1
