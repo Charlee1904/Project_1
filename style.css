@@ -1,3 +1,4 @@
+
 * {
     margin:0%;
 }
@@ -67,3 +68,6 @@ body {
 @media (max-width:400px){};
 @media (min-width:400px) and (max-width:1000px){};
 @media (min-width:1001px){};
+.vid{
+    display: none;
+}
