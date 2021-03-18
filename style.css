@@ -1,3 +1,73 @@
+
+* {
+    margin:0%;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-color: black;
+    background-size: cover;
+    font-family: fantasy;
+    font-variant-caps: unicase;
+    color: white;
+    background-repeat: unset;
+    background-position: center;
+}
+
+#bottom {
+    display:grid;
+}
+
+#dailyPic {
+    background-color: yellow;
+    height: 422px;
+}
+
+#potdImg {
+    background-color: pink;
+    background-color: pink;
+    height: 285px;
+    border: 5px solid rebeccapurple;
+}
+
+#potdVid {
+    display:none;
+}
+
+#oldSearch {
+    background-color:brown;
+}
+
+#searchPic {
+    background-color: chartreuse;
+}
+
+
+#searchVid {
+    background:greenyellow;
+    width: 143px;
+}
+
+#topBanner {
+    display: flex;
+    justify-content: center;
+    height: 65px;
+    flex-direction: column-reverse;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+.topRow {
+    display: grid;
+    grid-template-rows: 200px 50% 154px;
+    grid-template-columns: 35% 65%;
+    padding: 3px;
+    margin: 5px;
+}
+
+
+@media (max-width:400px){};
+@media (min-width:400px) and (max-width:1000px){};
+@media (min-width:1001px){};
 .vid{
     display: none;
 }
