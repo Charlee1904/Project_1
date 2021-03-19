@@ -1,10 +1,5 @@
 const key ='AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
 const imageURL='https://api.nasa.gov/planetary/apod?&api_key='+ key
-const playVidButton= document.querySelector("#potdVid");
-const myVideo=document.getElementById("potdVid")
-const marsPagebtn =document.querySelector('#marshtml')
-marsPagebtn.addEventListener("click", marsPageFun)
-
 
 
 
@@ -30,4 +25,4 @@ function homePage(){
 
 
 
-        }
+        } 

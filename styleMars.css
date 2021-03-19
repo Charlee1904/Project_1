@@ -104,13 +104,46 @@ margin-left: auto;
 .pageIncrease{
     font-size: 20px;
     position: relative;
-    left: 60%;
-    top:35px;
+    left: 38%;
+    top:60px;
 }
 .pageDecrease{
     font-size: 20px;
     position: relative;
-    left: 40%;
+    left: 35%;
     top:60px;
    
 }
+
+.solDates{
+    position: relative;
+    left: 40%;
+    top: 90px;
+    font-size: 40px;
+    margin: 0%;
+}
+
+.userSolDates{
+    position: relative;
+    left:-300px;
+    width:200px ;
+    height: 60px;
+    top:60px
+    
+}
+
+.changeSol{
+    position: relative;
+    left: -300px;
+    top:50px;
+    height: 60px;
+    width:100px ;
+    font-size: 20px;
+}
+.invalidSolDate{
+    position: relative;
+    top: 50px;
+    color: red;
+    display: none;
+}
+
