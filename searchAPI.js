@@ -7,6 +7,7 @@ const marsWeather="https://api.maas2.apollorion.com"
 const roverArray = ["Curiosity","Opportunity","Spirit"]
 let rover= roverArray[0]
 // const earthImg='https://api.nasa.gov/EPIC/api/natural/images?api_key='+ key
+let solDateMars= 1
 let page=1
 const nextPage = document.querySelector("#pageIncrease")
 nextPage.addEventListener("click", pageNext)
@@ -16,14 +17,30 @@ let rImg0=0
 let rImg1=1
 let rImg2=2
 let roverNumber = 0
+const solInput=document.querySelector('#userSolDates')
+const changeSol=document.querySelector("#changeSol")
+changeSol.addEventListener("click", changeSolFun)
 
 
-
+function changeSolFun(){
+    solDateMars = solInput.value;
+    marsInfo()
+}
 
  function pageNext(){
     rImg0+=2
     rImg1+=2
     rImg2+=2
+    console.log("pn",rImg0,rImg1,rImg2)
+    if (rImg2>25){
+        page = 2
+        rImg0=0
+        rImg1=1
+        rImg2=2
+        marsInfo()
+        return
+
+    }
     marsInfo()
  }
 
@@ -31,6 +48,7 @@ let roverNumber = 0
      rImg0-=2
      rImg1-=2
      rImg2-=2
+     console.log("rn",rImg0,rImg1,rImg2)
      if (rImg0<0){
         rImg0=0
         rImg1=1
@@ -45,7 +63,9 @@ let roverNumber = 0
 
 
 function chaneRovers(){
-   
+   rImg0=0
+   rImg1=1
+   rImg2=2
     page =1
     
     roverNumber ++
@@ -63,7 +83,7 @@ function chaneRovers(){
 }
 
  function marsInfo(){
-    
+    document.getElementById("invalidSolDate").style.display="none"
 
 
       fetch(marsWeather)
@@ -77,14 +97,18 @@ function chaneRovers(){
                     // console.log(dataWeather)
                 })
             })
-            
-            const roverImg='https://api.nasa.gov/mars-photos/api/v1/rovers/'+rover+'/photos?sol=1000&page='+page+'&api_key='+key
+            console.log(solDateMars)
+            const roverImg='https://api.nasa.gov/mars-photos/api/v1/rovers/'+rover+'/photos?sol='+solDateMars+'&page='+page+'&api_key='+key
             console.log(roverImg)
     fetch(roverImg)
     .then(function(responceRover){
         responceRover.json()
         .then(function(dataRover){
             console.log(dataRover)
+            
+            if(dataRover.photos[rImg0]===undefined){
+                document.getElementById("invalidSolDate").style.display="block"
+            }
             document.getElementById("img0").src=dataRover.photos[rImg0].img_src;
             document.getElementById("img1").src=dataRover.photos[rImg1].img_src;
             document.getElementById("img2").src=dataRover.photos[rImg2].img_src;
