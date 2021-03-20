@@ -1,15 +1,9 @@
-<<<<<<< HEAD
-let date = document.getElementById("picDateChosen");
-const apiKey = 'AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
-
-let imgUrl = 'https://api.nasa.gov/planetary/apod?&api_key=' + apiKey ;
-=======
 // let date = document.getElementById("picDateChosen");
 // const apiKey = 'AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
 // let imageDate = 'date=' + "2021-02-01" + '&';
 // let imgUrl = 'https://api.nasa.gov/planetary/apod?&api_key=' + apiKey ;
->>>>>>> 123867bfc6d929a6ab4c2dba09d501bf5ce69641
-
+const pickedDate = document.getElementById("from-datepicker")
+console.log(pickedDate)
 // let xmlHttp = new XMLHttpRequest();
 
 
@@ -24,29 +18,6 @@ let imgUrl = 'https://api.nasa.gov/planetary/apod?&api_key=' + apiKey ;
 // //         let data = JSON.parse(this.responseText);
 // //         console.log(data);
 
-<<<<<<< HEAD
-        let copyright = data["copyright"];
-        let date = data["date"];
-        let explanation = data["explanation"];
-        let hdurl = data["hdurl"];
-        let media_type = data["media_type"];
-        let title = data["title"];
-        let url = data["url"];
-        let imgDate = data["from-datepicker"]
-
-        document.getElementById("potdImg").src = url;
-        document.getElementById("titlePic").innerHTML = title;
-        document.getElementById("copyrightPic").innerHTML = copyright;
-        document.getElementById("explanationPic").innerHTML = explanation;
-        document.getElementById("from-datepicker").value = imageDate;
-        console.log(imageDate);
-        // const datePicked = document.getElementById("from-datepicker");
-        // datePicked.addEventListener("dateChange",(e))
-    }
-}
-xmlHttp.open("GET", imgUrl, true);
-xmlHttp.send();
-=======
 // //         let copyright = data["copyright"];
 // //         let date = data["date"];
 // //         let explanation = data["explanation"];
@@ -66,4 +37,3 @@ xmlHttp.send();
 // }
 // xmlHttp.open("GET", imgUrl, true);
 // xmlHttp.send();
->>>>>>> 123867bfc6d929a6ab4c2dba09d501bf5ce69641
