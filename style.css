@@ -3,101 +3,69 @@
     margin:0%;
 }
 
+
 body {
-    background-image: url(background.jpg);
-    background-color: black;
-    background-size: cover;
-    font-family: fantasy;
-    font-variant-caps: unicase;
-    color: white;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-repeat: no-repeat;
+        background-color: black;
+        background-size: cover;
+        font-family: fantasy;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
-#bottom {
-    display:grid;
+.container {
+    width: 75%;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-
-#dailyPic {
-    background-color: pink;
-    border: 5px solid rebeccapurple;
-    height: 425px;
-    grid-area:m;
-}
-/* #explanationPic {
-    
-}; */
-
-li{
-    width:200px;
+ #explanationPic {
+    width: 50%;
+    display: flex;
+    margin: 15px;
 }
 
-li:first-of-type {
-	animation-name: red;
-	animation-duration: 1s;
-	animation-delay: 3s;
-}
-li:nth-of-type(2) {
-	animation-name: orange;
-	animation-duration: 3s;
-	animation-delay: 4s;
-}
-li:nth-of-type(3) {
-	animation-name: yellow;
-	animation-duration: 5s;
-	animation-delay: 7s;
-}
-li:nth-of-type(4) {
-	animation-name: green;
-	animation-duration: 7s;
-	animation-delay: 12s;
+#from-datepicker {
+    font-size: 20px;
+    text-align: center;
 }
 
-#oldSearch {
-    background-color:brown;
-    margin-top: 19px;
+#topBanner {
+    background: blue;
+    display: flex;
+    font-family: 'DotGothic16', sans-serif;
+    height: 125px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: wheat;
+}
+
+#potdImg {
+    float: left;
+    width: 500px;
+    height: 500px;
 }
 
 #searchPic {
-    background-color: chartreuse;
-}
-
-#searchVid {
-    background:greenyellow;
-    width: 143px;
-    margin-top: 20px;
-}
-
-
-#topBanner {
+    background-color: black;
+    width: 20%;
     display: flex;
-    justify-content: center;
-    height: 65px;
-    flex-direction: column-reverse;
-    font-family: 'DotGothic16', sans-serif;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }
 
-.topRow {
-    display: grid;
-    grid-template-rows: 200px 50% 154px;
-    grid-template-columns: 30% 60% 10%;
-    padding: 3px;
-    margin: 5px;
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-template-areas:
-    "h h h h h"
-    "m m m m m"
-    "b b b b b"
-}
-.vid{
-    display: none;
-}
 
 ul {
-    list-style: none;
+    float: right;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width:400px){};
