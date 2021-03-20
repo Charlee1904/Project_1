@@ -20,10 +20,20 @@ let roverNumber = 0
 const solInput=document.querySelector('#userSolDates')
 const changeSol=document.querySelector("#changeSol")
 changeSol.addEventListener("click", changeSolFun)
+const homePageBtn=document.querySelector('#toHome')
+homePageBtn.addEventListener("click", goToHome)
+
+
+function goToHome(){
+    window.location.href="index.html"
+}
 
 
 function changeSolFun(){
     solDateMars = solInput.value;
+    rImg0=0
+    rImg1=1
+    rImg2=2
     marsInfo()
 }
 

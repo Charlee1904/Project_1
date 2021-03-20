@@ -1,9 +1,13 @@
 *{
  margin: 0px;
  padding: 0px;   
+ 
 }
+
 .header{
   height: 250px;
+  margin: 0px;
+  border: 0px;
     background-color: coral;
 }
 .headOne{
@@ -40,27 +44,27 @@
 
 .maxTemp{
     position: relative;
-    left: -480px;
+    left: -35%;
     font-size: 20px;
 }
 
 .minTemp{
     position: relative;
-    left:-480px;
+    left: -35%;
     font-size: 20px;
 }
 
 .sunRise{
     position: relative;
     font-size: 20px;
-    right:-400px;
-    bottom:60px;
+    right:-40%;
+    bottom:45px;
 }
 .sunSet{
     position: relative;
     font-size: 20px;
-    right:-400px;
-    bottom: 60px;
+    right:-40%;
+    bottom: 45px;
 }
 .rover{
     position: relative;
@@ -109,7 +113,7 @@ width: 80%;
 .pageIncrease{
     font-size: 20px;
     position: relative;
-    left: 300px;
+    left: 20%;
     top:200px;
     width:300px;
     font-size: 50px;
@@ -126,7 +130,7 @@ width: 80%;
 
 .solDates{
     position: relative;
-    left: 650px;
+    left: 35%;
     top: -130px;
     font-size: 40px;
     margin: 0%;
@@ -158,12 +162,12 @@ width: 80%;
 }
 
 .imgOfRover{
-    position:relative;
+position:relative;
 width: 250px;
 height: 250px;
 background-color: red;
 bottom: -65px;
-left: 10%;
+left: 0%;
 border: 3px solid orange;
 }
 
@@ -175,4 +179,143 @@ border: 3px solid orange;
     left:50%;
     bottom: -65px;
     border: 3px solid orange;
+}
+
+@media screen and (max-width:1780px){
+   .img0{
+       width: 400px;
+       height: 400px;
+   } 
+   .img1{
+    width: 400px;
+    height: 400px;
+  } 
+   .img2{
+    width: 400px;
+    height: 400px;
+  } 
+  .pageDecrease{
+
+  }
+  .pageIncrease{
+    left: 0%;
+  }
+  
+}
+
+@media screen and (max-width:1480px){
+    .img0{
+        width: 350px;
+        height: 350px;
+    } 
+    .img1{
+     width: 350px;
+     height: 350px;
+   } 
+    .img2{
+     width: 350px;
+     height: 350px;
+   } 
+   .pageDecrease{
+    left: -500px;
+   }
+   .pageIncrease{
+    
+   }
+   .solDates{
+      left:32% 
+   }
+   .roverPatch{
+       left: 48%;
+   }
+ }
+
+ @media screen and (max-width:1280px){
+    .img0{
+        width: 300px;
+        height: 300px;
+    } 
+    .img1{
+     width: 300px;
+     height: 300px;
+   } 
+    .img2{
+     width: 300px;
+     height: 300px;
+   } 
+   .pageDecrease{
+ 
+   }
+   .pageIncrease{
+     left: -10%;
+   }
+
+   .imgOfRover{
+       width: 200px;
+       height: 200px;
+   }
+   .roverPatch{
+       width: 200px;
+       height: 200px;
+   }
+   .changeRover{
+       left: 45%;
+       top:-142px;
+   }
+   .changeSol{
+       top:125px;
+       left: -600px;
+   }
+  
+ }
+
+@media screen and (max-width:1190px){
+    .pageIncrease{
+        left: 65%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .pageDecrease{
+        margin: 0px;
+        padding: 0px;
+        top: 265px;
+        left: -40%; 
+    }
+
+}
+
+
+
+@media screen and (max-width: 1100px){
+    .roverImgs{
+        display: flex;
+        flex-direction: column;
+        left:20%
+    }
+
+    .img0{
+        width: 500px;
+        height: 500px;
+    } 
+    .img1{
+     width: 500px;
+     height: 500px;
+   } 
+    .img2{
+     width: 500px;
+     height: 500px;
+   } 
+
+   .imgOfRover{
+       visibility: hidden;
+   }
+   .roverPatch{
+       visibility: hidden;
+   }
+   .pageIncrease{
+       top:68px;
+   }
+   .pageDecrease{
+    top: 130px;
+   }
 }
