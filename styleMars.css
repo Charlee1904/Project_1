@@ -174,8 +174,8 @@ width: 80%;
 .invalidSolDate{
     position: relative;
     top: 50px;
-    color: red;
-    display: none;
+    color: maroon;
+    display: block;
 }
 
 .imgOfRover{
@@ -245,6 +245,12 @@ border: 3px solid orange;
    .roverPatch{
        left: 48%;
    }
+   .imgOfRover{
+       left:0%;
+   }
+   .invalidSolDate{
+       font-size: 30px;
+   }
  }
 
  @media screen and (max-width:1280px){
@@ -283,6 +289,10 @@ border: 3px solid orange;
        top:125px;
        left: -600px;
    }
+   .invalidSolDate{
+    font-size: 30px;
+    top:130px;
+}
   
  }
 
@@ -330,9 +340,11 @@ border: 3px solid orange;
        visibility: hidden;
    }
    .pageIncrease{
-       top:68px;
+       top:238px;
+       left:;
    }
    .pageDecrease{
-    top: 130px;
+       left:-350px;
+    top: 300px;
    }
 }

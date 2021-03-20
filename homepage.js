@@ -5,9 +5,21 @@ marsPageBtn.addEventListener("click", marsPageFun)
 const goToDate =document.querySelector("#goToDate")
 goToDate.addEventListener("click", dateFunction)
 const datePicker = document.querySelector("#from-datepicker")
-let userDate=""
+// let userDate=""
+let userDate = 'date=' + "2021-02-01" + '&';
 const userDateUrl='https://api.nasa.gov/planetary/apod?&api_key=' + key +"&start_date="+datePicker.value+"&end_date="+datePicker.value
 // const userDateUrl="https://api.nasa.gov/planetary/apod?api_key=MQH032jvhkJ3MB9MEone9bGtLI1fG79WCoChk16l&start_date=2010-11-28&end_date=2010-11-28"
+
+const pickedDate = document.getElementById("from-datepicker");
+pickedDate.addEventListener('change', (event) => {
+    if(pickedDate.value != "") {
+        let date = moment(pickedDate.value).format("YYYY-MM-DD");
+        imageDate = 'date=' + date + '&';
+        console.log(date);
+    }
+});
+
+
 
 function dateFunction(){
     datePicker.value;
