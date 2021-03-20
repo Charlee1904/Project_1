@@ -7,7 +7,7 @@ const marsWeather="https://api.maas2.apollorion.com"
 const roverArray = ["Curiosity","Opportunity","Spirit"]
 let rover= roverArray[0]
 // const earthImg='https://api.nasa.gov/EPIC/api/natural/images?api_key='+ key
-let solDateMars= 1
+let solDateMars= 200
 let page=1
 const nextPage = document.querySelector("#pageIncrease")
 nextPage.addEventListener("click", pageNext)
@@ -80,6 +80,7 @@ function chaneRovers(){
     rover = roverArray[roverNumber]
     document.getElementById("rover").textContent=rover
     marsInfo()
+ 
 }
 
  function marsInfo(){
@@ -100,6 +101,23 @@ function chaneRovers(){
             console.log(solDateMars)
             const roverImg='https://api.nasa.gov/mars-photos/api/v1/rovers/'+rover+'/photos?sol='+solDateMars+'&page='+page+'&api_key='+key
             console.log(roverImg)
+
+            if (rover===roverArray[0]){
+                document.getElementById("imgOfRover").src= "./marsRoverImgs/curiosity.jpg";
+                document.getElementById("roverPatch").src="./marsRoverImgs/curiosityLogo.png"
+            }
+
+
+            if (rover===roverArray[1]){
+                document.getElementById("imgOfRover").src= "./marsRoverImgs/Opportunity.jpg";
+                document.getElementById("roverPatch").src="./marsRoverImgs/OpportunityLogo.png"
+            }
+            
+            if (rover===roverArray[2]){
+                document.getElementById("imgOfRover").src= "./marsRoverImgs/spirit.jpg";
+                document.getElementById("roverPatch").src="./marsRoverImgs/spiritLogo.png"
+            }
+
     fetch(roverImg)
     .then(function(responceRover){
         responceRover.json()
