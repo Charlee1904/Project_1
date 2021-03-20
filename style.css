@@ -3,128 +3,87 @@
     margin:0%;
 }
 
- body { 
-     background-image: url(background.jpg); 
-     background-color: black; 
-     background-size: cover; 
-     font-family: fantasy; 
-     color: white; 
-     background-position: center; 
-     background-repeat: no-repeat; 
- } 
-  
- #bottom { 
-     display:grid; 
- } 
-  
-  
- #container { 
-     background:greenyellow; 
-     display: grid;
-     margin-top: -82px;
-     margin-left: 55px;
- }
-  
- #dailyPic {  
-   
- } 
-  
- div#copyrightPic { 
-     font-size: 3em; 
- } 
-  
-#explanationPic {
-    width: 500px;
+
+body {
+        background-image: url(background.jpg);
+        background-color: black;
+        background-size: cover;
+        font-family: fantasy;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
- #from-datepicker { 
-  grid-area: t; 
-  font-size: 2em; 
- } 
-
- .img1 { 
-     grid-area:img1; 
- } 
-
- li { 
-     background-color: blue; 
-     font-size: 2em; 
- } 
-  
- img #explanationPic{ 
- } 
-  
- .main { 
-     display: grid; 
-     height:100vh; 
-     grid-auto-rows: 100px; 
-     grid-template-columns: 1fr 1fr 1fr 1fr; 
-     grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr; 
-     grid-template-areas: 
-  
-     "topBanner topBanner topBanner topBanner"   
-     "searchPic topRow topRow oldSearch"  
-     "searchVid topRow topRow oldsearch" 
- } 
-  
- #potdImg { 
-     height: 285px; 
-     width: 100%; 
-     border: 5px solid rebeccapurple; 
- } 
-  
- #potdVid { 
-     display:none; 
- } 
-  
- #oldSearch {
-     grid-area:oldSearch;
- }
-  
- #searchPic {
-    grid-area: searchPic;
-    font-size: 2em;
-}
-  
- #searchVid { 
-     background: greenyellow; 
-     width: 143px; 
-     margin-top: 20px; 
-     font-size: 2em; 
-  
- } 
-  
- #titlePic {
-    font-size: 30px;
+.container {
+    width: 100%;
     display: flex;
-    justify-content: center;
+    flex-flow: column;
+    align-items: center;
 }
 
- #topBanner { 
-    height: 65px;
-    grid-area: topBanner;
+div#copyrightPic {
+    font-size: 25px;
+}
+
+div#titlePic {
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+ #explanationPic {
+    width: 50%;
+    display: flex;
+    margin: 15px;
+}
+
+#from-datepicker {
+    font-size: 20px;
+    text-align: center;
+}
+
+#topBanner {
+    background: blue;
+    display: flex;
     font-family: 'DotGothic16', sans-serif;
-    font-size: xxx-large;
-    display: flex;
+    height: 125px;
+    width: 100%;
     justify-content: center;
- }
-
- .topRow { 
-    /* display: grid;
-    grid-auto-rows: 100px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 250px 50% 250px;
-    padding: 3px;
-    margin: 5px;
-        margin-top: 5px;
-    grid-area: topRow;
-    margin-top: 115px; */
- }
- 
- @media (max-width:400px){}; 
- @media (min-width:400px) and (max-width:1000px){};
- @media (min-width:1001px){}; 
-
- .vid { 
-     display: none; 
+    align-items: center;
+    font-size: 55px;
+    color: wheat;
 }
+
+#potdImg {
+    float: left;
+    width: 500px;
+    height: 500px;
+}
+
+#searchPic {
+    background-color: black;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+}
+}
+
+
+#searchVid {
+    display: none;
+    margin:0px;
+}
+
+ul {
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:400px){};
+@media (min-width:400px) and (max-width:1000px){};
+@media (min-width:1001px){};
