@@ -3,6 +3,9 @@
  padding: 0px;   
  
 }
+body{
+    background-color: gray;
+}
 
 .header{
   height: 250px;
@@ -22,6 +25,15 @@
     position: relative;
     background-color: black;
     top:00px
+}
+.toHome{
+    position: relative;
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    top:130px;
+    margin-left: 20px;
+    background-color: gray;
 }
 .roverWeather{
     
@@ -76,7 +88,8 @@
 }
 .changeRover{
 position: relative;
-
+border-radius: 20%;
+background-color: coral;
 left:48%;
 top: -220px;
 font-size: 20px;
@@ -117,6 +130,8 @@ width: 80%;
     top:200px;
     width:300px;
     font-size: 50px;
+    border-radius: 20%;
+ background-color: coral;
 }
 .pageDecrease{
     font-size: 20px;
@@ -125,7 +140,8 @@ width: 80%;
     top:200px;
     width: 300px;
     font-size: 50px;
-   
+    border-radius: 20%;
+    background-color: coral;
 }
 
 .solDates{
@@ -153,6 +169,7 @@ width: 80%;
     height: 60px;
     width:200px ;
     font-size: 20px;
+    
 }
 .invalidSolDate{
     position: relative;
@@ -167,7 +184,7 @@ width: 250px;
 height: 250px;
 background-color: red;
 bottom: -65px;
-left: 0%;
+left: 10%;
 border: 3px solid orange;
 }
 
