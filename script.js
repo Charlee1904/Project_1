@@ -1,17 +1,23 @@
 // let date = document.getElementById("picDateChosen");
-// const apiKey = 'AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
-let imageDate = 'date=' + "2021-02-01" + '&';
+// const apiKey = 'AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5' 
+// let imageDate = 'date=' + "2021-02-01" + '&';
 
-// let imgUrl = 'https://api.nasa.gov/planetary/apod?&api_key=' + apiKey ;
-const pickedDate = document.getElementById("from-datepicker");
-pickedDate.addEventListener('change', (event) => {
-    if(pickedDate.value != "") {
-        let date = moment(pickedDate.value).format("YYYY-MM-DD");
-        imageDate = 'date=' + date + '&';
-        console.log(date);
-    }
-});
+// // let imgUrl = 'https://api.nasa.gov/planetary/apod?&api_key=' + apiKey ;
+// const pickedDate = document.getElementById("from-datepicker");
+// pickedDate.addEventListener('change', (event) => {
+//     if(pickedDate.value != "") {
+//         let date = moment(pickedDate.value).format("YYYY-MM-DD");
+//         imageDate = 'date=' + date + '&';
+//         console.log(date);
+//     }
+// });
 
+// let recentSearches = JSON.parse(localStorage.getItem("searches")) || [];
+// for (i = (recentSearches.length - 1); i >= (recentSearches.length - 5); i--) {
+//     document.querySelector("#oldSearch").innerHTML += `<div class="city">${recentSearches[i]}</div>`;
+// }
+
+// localStorage.setItem("searches", JSON.stringify(recentSearches));
 // let xmlHttp = new XMLHttpRequest();
 // // fetch(imgUrl)
 // //     .then(function(responce){
