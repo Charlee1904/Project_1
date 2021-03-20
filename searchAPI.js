@@ -1,8 +1,5 @@
 const key ='AMSm7BUhVVrEEznPAhGCTYFMmVY3KUheoNeWS4H5'
-
 const imageURL='https://api.nasa.gov/planetary/apod?&api_key='+ key
-const playVidButton= document.querySelector("#potdVid");
-const myVideo=document.getElementById("potdVid")
 const marsWeather="https://api.maas2.apollorion.com"
 const roverArray = ["Curiosity","Opportunity","Spirit"]
 let rover= roverArray[0]
