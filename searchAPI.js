@@ -6,7 +6,6 @@ const myVideo=document.getElementById("potdVid")
 const marsWeather="https://api.maas2.apollorion.com"
 const roverArray = ["Curiosity","Opportunity","Spirit"]
 let rover= roverArray[0]
-// const earthImg='https://api.nasa.gov/EPIC/api/natural/images?api_key='+ key
 let solDateMars= 200
 let page=1
 const nextPage = document.querySelector("#pageIncrease")
@@ -20,10 +19,37 @@ let roverNumber = 0
 const solInput=document.querySelector('#userSolDates')
 const changeSol=document.querySelector("#changeSol")
 changeSol.addEventListener("click", changeSolFun)
+const homePageBtn=document.querySelector('#toHome')
+homePageBtn.addEventListener("click", goToHome)
+let roverImg0 =document.querySelector('#img0')
+roverImg0.addEventListener("click", imgClickedMars0)
+let marsImg0 = false
+let storage0=""
+let storage1=""
+let storage2=""
+
+
+
+
+
+
+
+function imgClickedMars0(){
+    
+    localStorage.setItem("clickedPhoto", JSON.stringify(storage0))
+    window.location.href='clickedImg.html'
+}
+
+function goToHome(){
+    window.location.href="index.html"
+}
 
 
 function changeSolFun(){
     solDateMars = solInput.value;
+    rImg0=0
+    rImg1=1
+    rImg2=2
     marsInfo()
 }
 
@@ -130,14 +156,10 @@ function chaneRovers(){
             document.getElementById("img0").src=dataRover.photos[rImg0].img_src;
             document.getElementById("img1").src=dataRover.photos[rImg1].img_src;
             document.getElementById("img2").src=dataRover.photos[rImg2].img_src;
-            })})}
+           storage0 = dataRover.photos[rImg0].img_src
+            storage1=dataRover.photos[rImg1].img_src
+          storage2=dataRover.photos[rImg2].img_src
 
-// fetch(earthImg)
-//   .then(function(responceTerra){
-//      responceTerra.json()
-//       .then(function(dataTerra){
-//          console.log(dataTerra)
-//                    })})
-            
-   
+
+            })})}
 
