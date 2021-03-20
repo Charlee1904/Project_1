@@ -6,27 +6,43 @@ const datePicker = document.querySelector("#from-datepicker")
 // const goToDate =document.querySelector("#goToDate")
 // goToDate.addEventListener("click", dateFunction)
 // let userDate=""
-let userDate = 'date=' + "2021-02-01" + '&';
-const userDateUrl='https://api.nasa.gov/planetary/apod?&start_date='+userDate +"&end_date="+userDate +'&api_key='+key
-// const userDateUrl="https://api.nasa.gov/planetary/apod?api_key=MQH032jvhkJ3MB9MEone9bGtLI1fG79WCoChk16l&start_date=2010-11-28&end_date=2010-11-28"
+let userDate = '';
+let userDateUrl='https://api.nasa.gov/planetary/apod?&start_date='+userDate +"end_date="+userDate +'api_key='+key
+const playVidButton= document.querySelector("#potdVid");
+const myVideo=document.getElementById("potdVid")
 
 const pickedDate = document.getElementById("from-datepicker");
 pickedDate.addEventListener('change', (event) => {
     if(pickedDate.value != "") {
-        userDate = moment(pickedDate.value).format("YYYY-MM-DD");
+       
+        userDate =pickedDate.value;
         // imageDate = 'date=' + date + '&';
         console.log(userDate);
         console.log(userDateUrl)
+        userDateUrl='https://api.nasa.gov/planetary/apod?&start_date='+userDate +"&end_date="+userDate +'&api_key='+key
+        let date = moment().format("YYYY-MM-DD");
+            if(date<userDate){
+                return
+            }
+
         fetch(userDateUrl)
         .then(function(responceInfo){
             responceInfo.json()
             .then(function(dataInfo)
         {
             console.log(dataInfo)
-            document.getElementById("potdImg").src=dataInfo.url
-            document.getElementById("titlePic").innerHTML = dataInfo.title;
-            document.getElementById("copyrightPic").innerHTML = dataInfo.copyright;
-             document.getElementById("explanationPic").innerHTML = dataInfo.explanation;
+            console.log(dataInfo[0])
+
+            console.log(date)
+            if(dataInfo[0].media_type=== "video"){
+                console.log(dataInfo[0].url)
+               let vidURL= JSON.stringify(dataInfo[0].url)
+               myVideo.src=vidURL
+             }
+            document.getElementById("potdImg").src=dataInfo[0].url
+            document.getElementById("titlePic").innerHTML = dataInfo[0].title;
+            document.getElementById("copyrightPic").innerHTML = dataInfo[0].copyright;
+             document.getElementById("explanationPic").innerHTML = dataInfo[0].explanation;
         })
         })
     }
