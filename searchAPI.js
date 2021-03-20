@@ -110,7 +110,7 @@ function chaneRovers(){
 }
 
  function marsInfo(){
-    document.getElementById("invalidSolDate").style.display="none"
+    // document.getElementById("invalidSolDate").style.display="none"
 
 
       fetch(marsWeather)
