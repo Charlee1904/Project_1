@@ -3,76 +3,85 @@
     margin:0%;
 }
 
+
 body {
-    background-image: url(background.jpg);
-    background-color: black;
-    background-size: cover;
-    font-family: fantasy;
-    font-variant-caps: unicase;
-    color: white;
-    background-repeat: unset;
-    background-position: center;
-    background-repeat: no-repeat;
+        background-image: url(background.jpg);
+        background-color: black;
+        background-size: cover;
+        font-family: fantasy;
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
 }
 
-#bottom {
-    display:grid;
+.container {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
-#dailyPic {
-    background-color: yellow;
-    height: 422px;
+div#copyrightPic {
+    font-size: 25px;
+}
+
+div#titlePic {
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+ #explanationPic {
+    width: 50%;
+    display: flex;
+    margin: 15px;
+}
+
+#from-datepicker {
+    font-size: 20px;
+    text-align: center;
+}
+
+#topBanner {
+    background: blue;
+    display: flex;
+    font-family: 'DotGothic16', sans-serif;
+    height: 125px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    color: wheat;
 }
 
 #potdImg {
-    background-color: pink;
-    background-color: pink;
-    height: 285px;
-    border: 5px solid rebeccapurple;
-}
-
-#potdVid {
-    display:none;
-}
-
-#oldSearch {
-    background-color:brown;
-    margin-top: 19px;
+    float: left;
+    width: 500px;
+    height: 500px;
 }
 
 #searchPic {
-    background-color: chartreuse;
+    background-color: black;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
 }
-
 
 #searchVid {
-    background:greenyellow;
-    width: 143px;
-    margin-top: 20px;
+    display: none;
+    margin:0px;
 }
 
-
-#topBanner {
+ul {
+    float: right;
     display: flex;
-    justify-content: center;
-    height: 65px;
-    flex-direction: column-reverse;
-    font-family: 'DotGothic16', sans-serif;
+    flex-direction: column;
 }
-
-.topRow {
-    display: grid;
-    grid-template-rows: 200px 50% 154px;
-    grid-template-columns: 30% 60% 10%;
-    padding: 3px;
-    margin: 5px;
-}
-
-
 
 @media (max-width:400px){};
 @media (min-width:400px) and (max-width:1000px){};
 @media (min-width:1001px){};
-.vid{
-    display: none;
-}
