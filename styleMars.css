@@ -74,7 +74,7 @@
 position: relative;
 
 left:48%;
-top: 20px;
+top: -220px;
 font-size: 20px;
 }
 .roverImgs{
@@ -82,6 +82,11 @@ position: relative;
 top: 150px;
 margin-right: auto;
 margin-left: auto;
+display: flex;
+flex-direction: row;
+gap: 40px;
+left: 0%;
+width: 80%;
 }
 
 .img0{
@@ -104,21 +109,25 @@ margin-left: auto;
 .pageIncrease{
     font-size: 20px;
     position: relative;
-    left: 38%;
-    top:60px;
+    left: 300px;
+    top:200px;
+    width:300px;
+    font-size: 50px;
 }
 .pageDecrease{
     font-size: 20px;
     position: relative;
-    left: 35%;
-    top:60px;
+    left: -15%;
+    top:200px;
+    width: 300px;
+    font-size: 50px;
    
 }
 
 .solDates{
     position: relative;
-    left: 40%;
-    top: 90px;
+    left: 650px;
+    top: -130px;
     font-size: 40px;
     margin: 0%;
 }
@@ -126,10 +135,11 @@ margin-left: auto;
 .userSolDates{
     position: relative;
     left:-300px;
-    width:200px ;
+    width:400px ;
     height: 60px;
-    top:60px
-    
+    top:60px;
+    font-size: 45px;
+    border: 3px solid black;
 }
 
 .changeSol{
@@ -137,7 +147,7 @@ margin-left: auto;
     left: -300px;
     top:50px;
     height: 60px;
-    width:100px ;
+    width:200px ;
     font-size: 20px;
 }
 .invalidSolDate{
@@ -147,3 +157,22 @@ margin-left: auto;
     display: none;
 }
 
+.imgOfRover{
+    position:relative;
+width: 250px;
+height: 250px;
+background-color: red;
+bottom: -65px;
+left: 10%;
+border: 3px solid orange;
+}
+
+.roverPatch{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color:black;
+    left:50%;
+    bottom: -65px;
+    border: 3px solid orange;
+}
