@@ -2,7 +2,6 @@
     margin:0%;
 }
 
-
 body {
         background-image: url(background.jpg);
         background-color: black;
@@ -69,7 +68,6 @@ div#titlePic {
     color: white;
     margin-left: 20px;
 }
-
 
 #searchVid {
     display: none;
