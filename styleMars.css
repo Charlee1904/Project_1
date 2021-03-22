@@ -175,7 +175,7 @@ width: 80%;
     position: relative;
     top: 50px;
     color: maroon;
-    display: block;
+    display: none;
 }
 
 .imgOfRover{
@@ -340,11 +340,35 @@ border: 3px solid orange;
        visibility: hidden;
    }
    .pageIncrease{
-       top:238px;
-       left:0px;
+       top:190px;
+       left:310px;
    }
    .pageDecrease{
-       left:-350px;
-    top: 300px;
+       left: 35px;
+    top: 250px;
    }
+   .sunRise{
+ right: -25%;
+   }
+   .sunSet{
+    right: -25%;
+   }
+   .maxTemp{
+left: -25%;
+   }
+   .minTemp{
+    left: -25%
+   }
+}
+
+
+@media screen and (max-width:800px){
+    .pageIncrease{
+        top:190px;
+        left:160px;
+    }
+    .pageDecrease{
+        left: 145px;
+     top: 190px;
+    }
 }
