@@ -20,6 +20,10 @@ const homePageBtn=document.querySelector('#toHome')
 homePageBtn.addEventListener("click", goToHome)
 let roverImg0 =document.querySelector('#img0')
 roverImg0.addEventListener("click", imgClickedMars0)
+let roverImg1 =document.querySelector('#img1')
+roverImg1.addEventListener("click", imgClickedMars0)
+let roverImg2 =document.querySelector('#img2')
+roverImg2.addEventListener("click", imgClickedMars0)
 let marsImg0 = false
 let storage0=""
 let storage1=""
@@ -107,7 +111,7 @@ function chaneRovers(){
 }
 
  function marsInfo(){
-    // document.getElementById("invalidSolDate").style.display="none"
+    document.getElementById("invalidSolDate").style.display="none"
 
 
       fetch(marsWeather)
