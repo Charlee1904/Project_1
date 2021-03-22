@@ -48,7 +48,7 @@ div#titlePic {
 
 #goToMarsPage {
     background-color: cornflowerblue;
-    bottom: 80%;
+    bottom: 87%;
     display: flex;
     margin-left: 10px;
     position: absolute;
@@ -118,6 +118,114 @@ ul {
     flex-direction: column;
 }
 
-@media (max-width:400px){};
-@media (min-width:400px) and (max-width:1000px){};
+@media (max-width:400px){
+    #topBanner {
+        display:none;
+    }
+
+    div#titlePic {
+        font-size: 27px;
+        padding-top: 75px;
+    }
+
+    #goToMarsPage {
+        background-color: cornflowerblue;
+        bottom: 96%;
+        display: flex;
+        margin-left: 1px;
+        position: absolute;
+    }
+
+    #potdImg {
+        float: left;
+        height: 370px;
+        border: 5px solid whitesmoke;
+        width: 370px;
+    }
+
+    #explanationPic {
+        background-color: gray;
+        color: black;
+        display: flex;
+        font-family: ui-monospace;
+        font-stretch: semi-condensed;
+        font-weight: bolder;
+        line-height: 25px;
+        margin: 15px;
+        width: 375px;
+    }
+
+    #oldSearch {
+        display:none;
+    }
+
+    #searchPic {
+        background-color: black;
+        width: 64%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin-left: 120px;
+        margin-top: 10px;
+        border: 2px solid white;
+    }
+    
+}
+@media (min-width:401px) and (max-width:1000px){
+    #topBanner {
+        display:none;
+    }
+
+    #oldSearch {
+        display:none;
+    }
+
+    div#titlePic {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    
+    #goToMarsPage {
+        background-color: cornflowerblue;
+        bottom: 96%;
+        display: flex;
+        margin-left: 1px;
+        position: absolute;
+    }
+
+    #potdImg {
+        float: left;
+        height: 483px;
+        border: 5px solid whitesmoke;
+        width: 405px;
+        margin-right: -20px;
+    }
+
+    #searchPic {
+        background-color: black;
+        width: 64%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin-left: 120px;
+        margin-top: 10px;
+        border: 2px solid white;
+    }
+    
+    #explanationPic {
+    background-color: gray;
+    color: black;
+    display: flex;
+    font-family: ui-monospace;
+    font-stretch: semi-condensed;
+    font-weight: bolder;
+    line-height: 25px;
+    width: 400px;
+    margin-left: 35px;
+    }
+}
 @media (min-width:1001px){};
