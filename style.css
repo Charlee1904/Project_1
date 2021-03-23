@@ -4,14 +4,12 @@
 
 
 body {
-        background-image: url(background.jpg);
-        background-color: black;
-        background-size: cover;
-        font-family: fantasy;
-        color: white;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-repeat: no-repeat;
+   background-image: url(background.jpg);
+   background-color: black;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   color: white;
 }
 
 .container {
@@ -23,17 +21,24 @@ body {
 
 div#copyrightPic {
     font-size: 25px;
+    margin-top: 10px;
 }
 
 div#titlePic {
-    font-size: 45px;
+    font-size: 35px;
     padding-top: 15px;
 }
 
  #explanationPic {
-    width: 50%;
+    background-color: gray;
+    color:black;
     display: flex;
+    font-family: ui-monospace;
+    font-stretch: semi-condensed;
+    font-weight: bolder;
+    line-height: 25px;
     margin: 15px;
+    width: 50%;
 }
 
 #from-datepicker {
@@ -41,22 +46,38 @@ div#titlePic {
     text-align: center;
 }
 
-#topBanner {
-    background: blue;
+#goToMarsPage {
+    background-color: cornflowerblue;
+    bottom: 87%;
     display: flex;
-    font-family: 'DotGothic16', sans-serif;
-    height: 125px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 55px;
-    color: wheat;
+    margin-left: 10px;
+    position: absolute;
+}
+
+li {
+    border: 2px solid white;
+    background: dimgrey;
+    color: black;
+    font-size: 25px;
+    width: 160px;
+}
+#oldSearch {
+    bottom: 100%;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin: 0px;
+    margin-right: 75px;
+    padding-bottom: 16%;
+    position: sticky;
+    width: 150px;
 }
 
 #potdImg {
     float: left;
-    width: 500px;
     height: 500px;
+    border: 5px solid whitesmoke;
+    width: 550px;
 }
 
 #searchPic {
@@ -67,20 +88,144 @@ div#titlePic {
     text-align: center;
     font-size: 25px;
     color: white;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 2px solid white;
 }
+
 
 #searchVid {
     display: none;
     margin:0px;
 }
 
-ul {
-    float: right;
+#topBanner {
+    align-items: center;
+    background: linear-gradient(45deg, black, transparent);
+    background-position: bottom;
+    background-position-x: left;
+    color: whitesmoke;
     display: flex;
+    font-size: 60px;
+    height: 125px;
+    justify-content: center;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    float: right;
     flex-direction: column;
 }
 
-@media (max-width:400px){};
-@media (min-width:400px) and (max-width:1000px){};
+@media (max-width:400px){
+    #topBanner {
+        display:none;
+    }
+
+    div#titlePic {
+        font-size: 27px;
+        padding-top: 75px;
+    }
+
+    #goToMarsPage {
+        background-color: cornflowerblue;
+        bottom: 96%;
+        display: flex;
+        margin-left: 1px;
+        position: absolute;
+    }
+
+    #potdImg {
+        float: left;
+        height: 370px;
+        border: 5px solid whitesmoke;
+        width: 370px;
+    }
+
+    #explanationPic {
+        background-color: gray;
+        color: black;
+        display: flex;
+        font-family: ui-monospace;
+        font-stretch: semi-condensed;
+        font-weight: bolder;
+        line-height: 25px;
+        margin: 15px;
+        width: 375px;
+    }
+
+    #oldSearch {
+        display:none;
+    }
+
+    #searchPic {
+        background-color: black;
+        width: 64%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin-left: 120px;
+        margin-top: 10px;
+        border: 2px solid white;
+    }
+    
+}
+@media (min-width:401px) and (max-width:1000px){
+    #topBanner {
+        display:none;
+    }
+
+    #oldSearch {
+        display:none;
+    }
+
+    div#titlePic {
+        font-size: 25px;
+        padding-top: 15px;
+    }
+    
+    #goToMarsPage {
+        background-color: cornflowerblue;
+        bottom: 96%;
+        display: flex;
+        margin-left: 1px;
+        position: absolute;
+    }
+
+    #potdImg {
+        float: left;
+        height: 483px;
+        border: 5px solid whitesmoke;
+        width: 405px;
+        margin-right: -20px;
+    }
+
+    #searchPic {
+        background-color: black;
+        width: 64%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        margin-left: 120px;
+        margin-top: 10px;
+        border: 2px solid white;
+    }
+    
+    #explanationPic {
+    background-color: gray;
+    color: black;
+    display: flex;
+    font-family: ui-monospace;
+    font-stretch: semi-condensed;
+    font-weight: bolder;
+    line-height: 25px;
+    width: 400px;
+    margin-left: 35px;
+    }
+}
 @media (min-width:1001px){};
